@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="build/css/app.css">
+
+
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+</head>
+
+<body>
+  <header class="header contenedor">
+    <div class="header__flex">
+      <div class="header__logo">
+        <img src="./build/img/logo.svg" alt="logo-icon">
+      </div>
+      <nav class="navegacion">
+        <a class="navegacion__btn" href="#">Try it Free</a>
+      </nav>
+    </div>
+    <div class="header__content">
+      <h1 class="header__heading">Build the Community Your Fans Will Love</h1>
+      <p class="header__text">Huddle re-images the way build coummunities. You have a voice,
+        but so does your audience. Create Connections with your users as you engage discussion.
+      </p>
+      <a class="header__btn-prin" href="#">Get Started For Free</a>
+    </div>
+
+  </header>
+  <section class="seccion contenedor">
+    <img class="seccion__img" src="build/img/screen-mockups.svg" alt="icon-desktop">
+  </section>
+  <section class="followers contenedor">
+    <div class="followers__grid">
+      <div class="follower">
+        <h2 class="follower__heading">1.4k+</h2>
+        <p class="follower__text">Communities Formed</p>
+      </div>
+      <div class="follower">
+        <h2 class="follower__heading follower__heading-message">2.7m+</h2>
+        <p class="follower__text">Messages Sent</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="together">
+      <div class="together__wave">
+        <img src="build/img/bg-section-top-desktop-1.svg" alt="wave">
+      </div>
+      <div class="together__grid contenedor">
+        <div class="together__img">
+          <img src="build/img/illustration-grow-together.svg" alt="icon-together">
+        </div>
+        <div class="together__content">
+          <h3 class="together__heading">Grow Together</h3>
+          <p class="together__text">Generate meaningful discussions with your audience
+            and build a strong, loyal community. Think of the insightful conversations
+            you miss out on with a feedback form.
+          </p>
+        </div>
+      </div>
+    </section> <!-- end of together section-->
+
+    <section class="conversation">
+      <div class="conversation__wave">
+        <img src="build/img/bg-section-bottom-desktop-1.svg" alt="wave">
+        <!--get-->
+      </div>
+      <div class="conversation__grid contenedor">
+        <div class="conversation__img">
+          <img src="build/img/illustration-flowing-conversation.svg" alt="icon-together">
+        </div>
+        <div class="conversation__content">
+          <h3 class="conversation__heading">Flowing Conversations</h3>
+          <p class="conversation__text">You wouldn't paginate a conversation in real life,
+            so why do it online? Our threads have just-in-time loading for a more natural flow.
+          </p>
+        </div>
+      </div>
+    </section> <!-- end of conversation section-->
+
+    <section class="users">
+      <div class="users__wave">
+        <img src="build/img/bg-section-bottom-desktop-2.svg" alt="wave">
+        <!--get-->
+      </div>
+      <div class="users__grid contenedor">
+        <div class="users__img">
+          <img src="build/img/illustration-your-users.svg" alt="icon-users">
+        </div>
+        <div class="users__content">
+          <h3 class="users__heading">Your Users</h3>
+          <p class="users__text">It takes no time at all to integrate Huddle with your apps
+            authentication solution. This means, once signed in to your app, your
+            users can start chatting immediately.
+          </p>
+        </div>
+      </div>
+    </section> <!-- end of conversation section-->
+    <section class="community">
+      <div class="community__wave"><img src="build/img/bg-section-top-desktop-2.svg" alt="wave"></div>
+      <div class="community__hi contenedor">
+        <h3 class="community__heading">Ready To Build Your Community?</h3>
+        <a class="community__boton" href="#">Get Started For Free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wave"><img src="build/img/bg-footer-top-desktop.svg" alt="wave_footer"></div>
+    <div class="footer__grid contenedor">
+      <div class="footer__content">
+        <div class="footer__flex">
+          <img class="footer__logo" src="build/img/logo2.svg" alt="logo">
+          <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt blanditiis velit
+            iste
+            quia molestias
+            dignissimos?</p>
+          <p class="footer__phone">Phone: +1-534-123-2345</p>
+          <p class="footer__mail">example@huddle.com</p>
+          <div class="footer__sociales">
+            <ion-icon class="footer__logo-social" name="logo-facebook"></ion-icon>
+            <ion-icon class="footer__logo-social" name="logo-instagram"></ion-icon>
+            <ion-icon class="footer__logo-social" name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__form">
+        <h4 class="footer__title">Newsletter</h4>
+        <p class="footer__tag">To recieve tips on how grow your community,
+          sign up to our weekly newsletter. We'll never send you spam or pass on your
+          email address.
+        </p>
+        <form class="footer__formulario">
+          <input class="footer__input" type="text">
+          <input class="footer__submit" type="submit" value="Suscribe">
+        </form>
+      </div>
+    </div>
+    <p class="footer__attribution contenedor">
+      Challenge by <a class="footer__copy" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
+      Coded by &copy;<a class="footer__copy" href="https://github.com/Deniss28">DenisDev</a>.
+    </p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

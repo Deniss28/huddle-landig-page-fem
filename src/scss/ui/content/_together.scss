@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.together{
+    background-color: v.$paleBlue;
+    padding: 1rem 0;
+    &__grid{
+        @include m.grid(1, 2rem);
+        @include m.tablet { 
+            @include m.grid(2, 5rem);
+            align-items: center;
+        }
+    }
+    &__img{
+        @include m.tablet { 
+            grid-column: 2 / 3;
+        }
+    }
+    &__content{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding:0 3rem 5rem 0;
+        @include m.tablet { 
+            grid-row: 1 / 2;
+            text-align: left;
+        }
+
+    }
+    &__heading{
+        font-size: 2rem;
+        font-weight: bold;
+        color: v.$neutral;
+        @include m.tablet { 
+            font-size: 3.5rem;
+        }
+    }
+    &__text{
+        margin: 0;
+        font-size: 1.5rem;
+        @include m.tablet { 
+            font-size: 1.8rem;
+        }
+    }
+    &__wave{
+        position: relative;
+        top: -50px;
+        @include m.tablet{ 
+            top: -120px;
+        }
+    }
+    
+}

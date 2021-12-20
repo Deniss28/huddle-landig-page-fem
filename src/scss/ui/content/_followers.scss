@@ -1,0 +1,73 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.followers{
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        @include m.tablet { 
+            flex-direction: row;
+        }
+    @include m.tablet { 
+        justify-content: space-around;
+    }
+   }
+}
+
+.follower{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    &__heading{
+        font-weight: 400;
+        color: v.$neutral;
+        margin: 0 0 1rem 0;
+        font-size: 5.2rem;
+        @include m.tablet { 
+            font-size: 8.5rem;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/icon-communities.svg);
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 1030px;
+            @include m.tablet { 
+                top: 1410px;
+             }
+            }
+    }
+    &__heading-message{
+        &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/icon-messages.svg);
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 1180px;
+        @include m.tablet { 
+            top: 1410px;
+         }
+        }
+        
+    }
+    &__text{
+        font-size: 1.6rem;
+        margin: 0;
+        margin-bottom: 5rem;
+        color: lighten(#000, $amount: 50%);
+        @include m.tablet { 
+            margin-bottom: 20rem;
+            font-size: 2rem;
+            text-align: left;
+        }
+    }
+}
